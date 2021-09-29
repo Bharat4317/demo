@@ -16,5 +16,8 @@ terraform {
 resource "azurerm_resource_group" "terraform-github-action" {
   name     = "github-actions"
   location = "eastus2"
+  tags = {
+    created_by = "github_actions"
+  }
 }
 
