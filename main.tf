@@ -13,7 +13,7 @@ terraform {
 }
 
 #Create Resource Group
-resource "azurerm_resource_group" "terraform-github-actions" {
+resource "azurerm_resource_group" "terraform-github-action" {
   name     = "github-actions"
   location = "eastus2"
 }
