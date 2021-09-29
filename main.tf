@@ -12,5 +12,9 @@ terraform {
   }
 }
 
-
+#Create Resource Group
+resource "azurerm_resource_group" "terraform-github-actions" {
+  name     = "github-actions"
+  location = "eastus2"
+}
 
